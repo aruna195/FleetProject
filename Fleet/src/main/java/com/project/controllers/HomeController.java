@@ -23,18 +23,18 @@ public class HomeController {
 		
 		System.out.println("In HomePage");
 		
-		List<Customer> allCustomers = new CustomerDaoImpl().getAllCustomers();
+		/*List<Customer> allCustomers = new CustomerDaoImpl().getAllCustomers();
 		System.out.println(allCustomers);
 			
 		model.addAttribute("CustomerList", allCustomers);
 		//return "home";
-		return "customers";
-		/* List<FleetInfo> allFleetInfo = new FleetDaoImpl().getAllFleet();
+		return "customers" ;*/
+		 List<FleetInfo> allFleetInfo = new FleetDaoImpl().getAllFleet();
 		System.out.println(allFleetInfo);
 			
 		model.addAttribute("FleetList", allFleetInfo);
-		return "home";
-		//return "fleetlist"; */
+		//return "home";
+		return "fleetlist"; 
 		
 		
 		

@@ -9,7 +9,7 @@
    <br/>
    <table border="1" cellpadding="10">
    <tr>
-  title>FleetList</title>
+  <title>FleetList</title>
 </head>
 
 <body>
@@ -28,20 +28,20 @@
      <th>Serial Number </th>   
      
    </tr>
-   <c:forEach items="${FleetList}" var="fleet">
-     <tr>
-         <td>${FleetList.fleet_id}</td> 
-         <td>${FleetList.fleet_name}</td> 
-         <td>${FleetList.fleet_model}</td> 
-         <td>${FleetList.fleet_make}</td>         
-         <td>${FleetList.latitude}</td> 
-         <td>${FleetList.longitude}</td>
-         <td>${FleetList.category}</td> 
-         <td>${FleetList.serial_number}</td>      
+   <tr th:each="fleet:${FleetList}" >
+   
+     
+         <td th:text="${fleet.fleet_id}"></td> 
+         <td th:text="${fleet.fleet_name}"></td> 
+         <td th:text="${fleet.fleet_model}"></td> 
+         <td th:text="${fleet.fleet_make}"></td>         
+         <td th:text="${fleet.latitude}"></td> 
+         <td th:text="${fleet.longitude}"></td>
+         <td th:text="${fleet.category}"></td> 
+         <td th:text="${fleet.serial_number}"></td>      
             
-        
-      </tr>  
-      </c:forEach>  
+      
+       
    </table>
    
 
