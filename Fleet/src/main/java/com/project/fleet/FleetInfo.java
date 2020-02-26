@@ -1,12 +1,12 @@
 package com.project.fleet;
 
 public class FleetInfo {
+	
 	public FleetInfo() {
+		
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
-	
-	
 	
 	private int fleet_id;
 	private String fleet_name;

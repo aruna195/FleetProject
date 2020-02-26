@@ -43,7 +43,8 @@
          <td>${customer.latitude}</td> 
          <td>${customer.longitude}</td>
          <td>${customer.business_phone}</td> 
-         <td>${customer.personal_phone}</td>      
+         <td>${customer.personal_phone}</td>  
+         <td> "${FleetList}" var="fleet"   
             
         
       </tr>  
